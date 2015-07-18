@@ -3,21 +3,29 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="#90ddee">
 
     <TextView
         android:textSize="20sp"
         android:text="0"
         android:gravity="center"
         android:id="@+id/display"
+        android:layout_margin="10dp"
+        android:padding="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/display"
         android:text="Click"
-        android:id="@+id/button"/>
+        android:id="@+id/button"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 
 </RelativeLayout>

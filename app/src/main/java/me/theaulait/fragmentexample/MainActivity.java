@@ -18,11 +18,11 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        android.app.FragmentManager fragmentManager  = getFragmentManager();
+      //  android.app.FragmentManager fragmentManager  = getFragmentManager();
 
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-
-        fragmentTransaction.add(R.id.fragment_container, new FragmentActivity());
+        FragmentTransaction fragmentTransaction = getFragmentManager()
+                .beginTransaction()
+                .add(R.id.fragment_container, new FragmentActivity());
 
         fragmentTransaction.commit();
 
