@@ -1,5 +1,7 @@
 package me.theaulait.fragmentexample;
 
+import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,13 +13,18 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
-    public int count = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        android.app.FragmentManager fragmentManager  = getFragmentManager();
+
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+
+        fragmentTransaction.add(R.id.fragment_container, new FragmentActivity());
+
+        fragmentTransaction.commit();
 
     }
 
