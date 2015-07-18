@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
-    public int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
