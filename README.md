@@ -1,2 +1,2 @@
 # FragmentExample
-The master is written in statically and there is another branch for dynamic code. 
+The master is written in statically while another branch made for dynamic code. 
